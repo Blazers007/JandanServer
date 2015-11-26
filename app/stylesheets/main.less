@@ -1,6 +1,9 @@
 @import '../../bower_components/bootstrap/less/bootstrap';
 @import '../../bower_components/toastr/toastr';
 @import (less) '../../bower_components/magnific-popup/dist/magnific-popup.css';
+@import (less) '../../bower_components/photoswipe/dist/photoswipe.css';
+@import (less) '../../bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.css';
+@import (less) '../../bower_components/bootstrap-material-design/dist/css/ripples.css';
 
 /**
   Override
@@ -20,13 +23,8 @@ body.enter {
   background-color: #eee;
 }
 
-.enter-dialog {
-  background-color: #fafafa;
-  margin-top: 20%;
-  border-radius: 2px;
-  border: 1px #ccc solid;
-  padding: 0;
-  box-shadow: 2px 2px 3px rgba(204,204,204,0.5);
+#enter-card {
+  margin-top: 15%;
 }
 
 #enter-lock {
@@ -35,8 +33,8 @@ body.enter {
 }
 
 #enter-lock img {
-  height: 120px;
-  width: 96px;
+  height: 80px;
+  width: 64px;
   margin-top: 72px;
   margin-bottom: 72px;
 }
@@ -57,4 +55,42 @@ body.enter {
   font-size: 30px;
   color: #030303;
   text-align: center;
+}
+
+
+/* Card */
+.masonry-card {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.image-card {
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom:12px;
+}
+
+.image-card:hover {
+  cursor: pointer;
+  border: 1px #ccc solid;
+  box-shadow: 4px 4px 2px 2px rgba(204,204,204,0.5);
+}
+
+
+/* Test Less Factory Mode */
+
+.nav-blue:hover {
+  // border-bottom color  c1
+}
+
+.nav-blue.selected {
+  //border-bottom color c1
+}
+
+.nav-blue > .sub-items {
+  //background-color: c1;
+}
+
+.navgation-color(@mainColor: #fafafa, @subColor #333) {
+
 }

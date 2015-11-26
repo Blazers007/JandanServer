@@ -39,13 +39,15 @@ class Enter extends React.Component {
         return (
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6 col-lg-offset-3 enter-dialog">
-                        <div id="enter-lock">
-                            <img src="/img/lock.png" alt=""/>
-                        </div>
-                        <div id="enter-form">
-                            <input type="text" onChange={EnterActions.updateUsername} value={this.state.enterValue} />
-                            <button onClick={this.doEnter.bind(this)} disabled={this.state.enterDisabled}>Enter</button>
+                    <div className="col-lg-6 col-lg-offset-3">
+                        <div className="card" id="enter-card">
+                            <div id="enter-lock">
+                                <img src="/img/lock.png" alt=""/>
+                            </div>
+                            <div id="enter-form">
+                                <input type="text" onChange={EnterActions.updateUsername} value={this.state.enterValue} />
+                                <button type="button" className="btn btn-lg btn-raised btn-danger" onClick={this.doEnter.bind(this)} disabled={this.state.enterDisabled}>Enter</button>
+                            </div>
                         </div>
                     </div>
                 </div>

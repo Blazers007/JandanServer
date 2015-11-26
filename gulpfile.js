@@ -32,8 +32,14 @@ gulp.task('vendor', function() {
   return gulp.src([
     'bower_components/jquery/dist/jquery.js',
     'bower_components/bootstrap/dist/js/bootstrap.js',
+    'bower_components/bootstrap-material-design/dist/js/material.js',
+    'bower_components/bootstrap-material-design/dist/js/ripples.js',
     'bower_components/magnific-popup/dist/jquery.magnific-popup.js',
-    'bower_components/toastr/toastr.js'
+    'bower_components/photoswipe/dist/photoswipe.js',
+    'bower_components/photoswipe/dist/photoswipe-ui-default.js',
+    'bower_components/toastr/toastr.js',
+    'bower_components/masonry/dist/masonry.pkgd.js',
+    'bower_components/imagesloaded/imagesloaded.pkgd.js'
   ]).pipe(concat('vendor.js'))
     .pipe(gulpif(production, uglify({ mangle: false }))) // 如果当前是Production环境则压缩
     .pipe(gulp.dest('public/js'));

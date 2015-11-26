@@ -2,9 +2,12 @@
   "name": "newedenfaces",
   "dependencies": {
     "jquery": "^2.1.4",
-    "bootstrap-material-design": "",
     "bootstrap": "^3.3.5",
     "magnific-popup": "^1.0.0",
-    "toastr": "^2.1.1"
+    "toastr": "^2.1.1",
+    "masonry": "~3.3.2",
+    "bootstrap-material-design": "~0.5.0",
+    "imagesloaded": "~3.2.0",
+    "photoswipe": "~4.1.0"
   }
 }

@@ -3,12 +3,14 @@
  */
 import React from 'react';
 
+import UserNavbar from './UserNavbar';
+
 class User extends React.Component {
 
     render() {
         return (
             <div>
-                nav
+                <UserNavbar/>
                 {this.props.children}
             </div>
         )
